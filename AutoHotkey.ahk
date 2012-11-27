@@ -2,6 +2,14 @@
 ; Author: Rob Hilgefort
 ; Contact: rjhilgefort@gmail.com
 ;
+; IMPORTANT INFO ABOUT GETTING STARTED: Lines that start with a
+; semicolon, such as this one, are comments. They are not executed.
+;
+; Required KeyTweak registry changes. This script reflects these changes.
+;	LAlt::LCtrl
+;	LWin::LAlt
+;	LCtrl::LWin
+;
 ; Full Command List
 ; http://www.autohotkey.com/docs/commands.htm
 ;
@@ -9,18 +17,13 @@
 ; http://www.autohotkey.com/docs/KeyList.htm
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-; Remap hotkeys on left of keyboard
-LAlt::LCtrl
-LWin::LAlt
-LCtrl::LWin
-
 ; Mac style delete
-LCtrl & BS::Send {DEL}
+LWin & BS::Send {DEL}
+
+; Mac style alt tab
+;LCtrl & Tab::Send {AltTab}
+;LCtrl & Shift & Tab::ShiftAltTab
 
 ; Mac style Control + Arrowkeys
 ;LAlt & Right::Send {LCtrl Right}
 ;LAlt & Left::Send {LCtrl Left}
-
-; Mac style alt tab
-;LAlt & Tab::Send {LAlt Tab}
-;Shift & LCtrl & Tab::ShiftAltTab
