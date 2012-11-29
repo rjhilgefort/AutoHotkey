@@ -5,9 +5,9 @@
 ;;; Contact: rjhilgefort@gmail.com
 ;;;
 ;;; Required KeyTweak registry changes. This script reflects these changes.
-;;;    LAlt::LCtrl
-;;;	  LWin::LAlt
-;;;	  LCtrl::LWin
+;;;   LAlt::LCtrl
+;;;   LWin::LAlt
+;;;   LCtrl::LWin
 ;;;
 ;;; Full Command List
 ;;; http://www.autohotkey.com/docs/commands.htm
