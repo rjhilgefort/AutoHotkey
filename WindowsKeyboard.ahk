@@ -1,8 +1,12 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;; Author: Rob Hilgefort
-;;; Contact: rjhilgefort@gmail.com
+;;; Author:      Rob Hilgefort
+;;; Contact:     rjhilgefort@gmail.com
+;;; Title:       WindowsKeyboard.ahk
+;;; Description: This script is intended to be run in a windows
+;;;              environment, and to adjust a NATIVE WINDOWS KEYBOARD
+;;;              to operate as it does on Mac OSX.
 ;;;
 ;;; Required KeyTweak registry changes. This script reflects these changes.
 ;;;   LAlt::LCtrl
@@ -46,3 +50,4 @@ LWin & BS::Send {DEL}
 ; Mac style Control + Arrowkeys
 ;LAlt & Right::Send {LCtrl Right}
 ;LAlt & Left::Send {LCtrl Left}
+

@@ -1,4 +1,4 @@
 AutoHotkey
 ==========
 
-AutoHotkey script for porting mac hot keys to windows.
+This project contains seperate AutoHotKey scripts that I use to adjust keyboards to act like Mac keyboards on windows environments.
