@@ -28,26 +28,27 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
-; Mac style delete
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Mac style delete ;
+;;;;;;;;;;;;;;;;;;;;
 LWin & BS::Send {DEL}
 
-; Mac style navigate text
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Mac style navigate text ;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ^Left::Send {Home}
 ^Right::Send {End}
-^+Left::Send {LShift down}{Home}
-^+Right::Send {LShift down}{End}
+^Up::Send {PgUp}
+^Down::Send {PgDn}
+^+Left::Send {LShift down}{Home}{LShift up}
+^+Right::Send {LShift down}{End}{LShift up}
 
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;; NOT WORKING BELOW ;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
+^!#BS::Send {LControl}{LAlt}{Delete}
 
-; Mac style alt tab
-;LCtrl & Tab::AltTab
-;LCtrl & LShift & Tab::ShiftAltTab
+; TotalFinder style open ;
+;;;;;;;;;;;;;;;;;;;;;;;;;;
+!`::Send {LWin down}e{LWin up}
 
-; Mac style Control + Arrowkeys
-;LAlt & Right::Send {LCtrl Right}
-;LAlt & Left::Send {LCtrl Left}
+; Alt+Tab ;
+;;;;;;;;;;;
+;LCtrlTab::AltTab
+;LCtrlLShiftTab::ShiftAltTab
 
